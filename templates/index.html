@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Classes</title>
+  </head>
+  <body>
+    <h1>Today's Classes</h1>
+    <ul>
+      {% for cls in today_classes %}
+      <li>
+        <strong>{{ cls.Class }}</strong> - {{ cls.Teacher }} - {{ cls.Time }}
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
